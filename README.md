@@ -1,5 +1,7 @@
 # arpgclicker
 
+A hobby project for a Diablo-ish clicker game. Uses Vue&Vuex.
+
 ## Project setup
 ```
 npm install
