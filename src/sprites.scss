@@ -1,0 +1,30 @@
+
+.sprite {
+  background-image: url('assets/spritesheet.png');
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+$sprites: (
+  "empty": 32px 32px,
+  "placeholder": -192px -64px,
+  "axe": -352px -160px,
+  "helmet": -32px -224px,
+  "chest": -224px -224px,
+  "boots": -64px -256px,
+  "pants": -320px -224px,
+  "gloves": 0px -256px,
+  "dagger": -256px -160px,
+  "flail": -384px -160px,
+  "fists": -480px -160px,
+  "shield": -64px -192px,
+  "ring": -160px -256px,
+  "necklace": -192px -256px
+);
+
+@each $name, $position in $sprites {
+  .sprite-#{$name} {
+    background-position: $position;
+  }
+}
